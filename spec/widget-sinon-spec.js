@@ -42,7 +42,7 @@ describe('widget', () => {
     complexStub.returns(0);
 
     expect(widget.doComplex(100, 99, 98), 'to equal', 0);
-    expect(complexStub, 'was called with', 100, 99, 98);
-    expect(complexStub, 'was called times', 2);
+    expect(complexStub, 'was called with', 10, 99, 98)
+    .and('was called times', 1);
   });
 });
